@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<title>LMS</title>
+<script>
+
+function back()
+{
+document.getElementById("teacher").innerHTML="By Examination Department:";
+document.getElementById("msg").innerHTML="Date sheet for End term Examination Has been uploaded.Follow path LMS Navigation -----> Examination Seating Plan";
+}
+function front()
+{
+document.getElementById("teacher").innerHTML="By inderjeeth singh:";
+document.getElementById("msg").innerHTML="Your ca1 will be again conducted in your respective lecture class and ca4 will be in your tutorial class";
+}
+
+</script>
+<style>
+body,html{
+padding:0;
+margin:0;}
+.h
+{
+background-color:rgba(61, 100, 140,0.5);
+width:101.75%;
+height:100px;
+margin:-25px -25px 0px -25px;
+}
+ul 
+{
+background-color:rgb(0, 86, 119);
+width:98%;
+height:50px;
+margin:0px -15px 0px -15px;
+list-style-type: none;
+overflow: hidden;
+}
+li 
+{
+float: left;
+}
+li a, .dropbtn 
+{
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn 
+{
+background-color:rgb(67, 117, 198);
+}
+li.dropdown 
+{
+display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#FEFCFF;
+    min-width: 160px;
+    }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;/*For setiing the style in which option will come on clicking Lms Navigation*/
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color:rgb(92, 152, 249);
+color:white
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;/*For setiing the style in which option will come on clicking Lms Navigation*/
+}
+.main
+{
+height:515px;
+width:100%;
+background-color:#aecbf9;
+display:inline-flex;
+}
+#intro
+{
+top:0px;
+right:0px;
+height:650px;
+width:20%;
+background-color:#ccdfff;
+}
+#shortcut
+{
+height:650px;
+width:80%;
+background-color:#f4f8ff;
+float:center;
+}
+</style>
+</head>
+<body style="background-size:100%;">
+<div class="h">
+<img src="lms8.jpg" style="width:100px;height:60px;float:left;position:realtive;margin-top:20px;margin-left:30px;">
+<h2 style="font-size:70px;font-family:Aldhabi;color:#dcefed;text-align:center;float:top;margin-top:15px;size:100%;">Learning Management System
+<img src="lms9.jpg" style="width:100px;height:60px;float:right;margin-top:20px;margin-right:6px;"></h2>
+</div>
+<div class="h2">
+<ul>
+<li class="dropdown">
+   <a href="#" class="dropbtn">LMS Navigation</a>
+   <div class="dropdown-content">
+   <a href="assign.html">Assignment</a>
+   <a href="exam.html">Examination Pattern</a>
+   <a href="seating.html">Examination Seating Plan</a>
+   <a href="feedback.html">FeedBack</a>
+   <a href="scheme.html">Programme scheme</a>
+   <a href="mycourses.html">My Courses</a>
+  <a href="aboutbook.html">About Books</a> 
+  <a href="practice.html">Practice Test</a>
+   <a href="re.html">Registration</a>
+   <a href="result.html">Results</a>
+
+   </div>
+
+  <li>
+    
+   <a href="mainpage.html" class="lms">Log Out</a>
+      
+    </div>
+
+	<a href="mainpage.html"></a>
+	</ul>
+</div>
+<div class="main">
+<div id="intro">
+<center>
+<img src="lms4.jpg" id="imglogo" style="height:150px;width:150px;border-radius:40%;margin:10px 50px;">
+<h3 style="text-align:center;color:#373666;margin:20px 30px;font-size:34px;">Name: <h2 style="color:#a34234">verto</h2></h3>
+<h3 style="text-align:center;color:#373666;margin:20px 30px;font-size:34px;">Sec: <h2 style="color:#a34234">K17CQ</h2></h3>
+</center>
+</div>
+<div id="shortcut">
+<p style="padding:15px;margin:70px 100px;background-color:#426972;border:5px solid white;color:#fff2fe;width:40%;height:30%;float:right;">
+<span style="align:center;font-size:35px;font-family:Colonna MT;">My Messages</span><br>
+<span id="teacher" style="font-family:Bell MT;color:#fffedd">By navjot kaur:</span><br>
+<span id="msg">Dear student,A new Project website design is available in your account.
+upload your project in ums before 4th nov.</span><br><br><br>
+<img src="lms7.jpg" style="width:100px;height:70px;align:center;cursor:pointer;" onclick="back()" ondblclick="back1()">
+<img src="lms6.jpg" style="width:100px;height:70px;align:center;float:right;cursor:pointer;" onclick="front()" ondblclick="front1()"></p>
+<table cellpadding="5px" cellspacing="1px" style="color:white ;border-collapse:collapse;padding:15px;text-align:center;margin:30px 60px;background-color:#2d3e59;border:5px solid white;">
+<tr style="background-color:#426972;"><td colspan="3"><span style="align:center;font-size:25px;font-family:Colonna MT;">Today's TimeTable</span></td></tr>
+<tr >
+<th>Time Slot</th>
+<th>Subject</th>
+<th>Faculty Name</th>
+</tr>
+<tr style="background-color:#426972;"><td>9-10 AM</td><td>automata</td><td>gurasis singh</td></tr>
+<tr><td>12-1 PM</td><td>English</td><td>ritu shrama</td></tr>
+<tr style="background-color:#426972;"><td>1-2 PM</td><td> Recess Break</td><td>--------------</td></tr>
+<tr><td>2-3 PM</td><td>climate changes</td><td>gaurav kumar</td></tr>
+<tr style="background-color:#426972;"><td>3-4 PM</td><td>wed development</td><td>navjot kaur</td></tr>
+<tr><td>4-5 PM</td><td>analytical</td><td>inderjeeth singh</td></tr>
+</table>
+<table border="2px" cellpadding="5px" cellspacing="1px" style="border-collapse:collapse;padding:15px;text-align:center;margin:30px 150px;background-color:#2d3e59;border:5px solid;width:70%;text-decoration:none;color:white;">
+<tr style="background-color:#426972;"><td colspan="3"><span style="align:center;font-size:25px;font-family:Colonna MT;">Course Code & Attendance</span></td></tr>
+<tr >
+<td style="background:#ffffff;color:black;">PEV 107</td>
+<td style="background:#5a994e;color:white;">VERBAL ABLITTY (98%)<span style="background:gray;float:right;">&nbsp &nbsp &nbsp</span></td>
+</tr>
+<tr >
+<td style="background:#ffffff;color:black;">PEV 305</td>
+<td style="background:#5a994e;color:white;">APPTITUDE(90%)<span style="background:gray;float:right;">&nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp</span></td>
+</tr>
+<tr >
+<td style="background:#ffffff;color:black;">CSE 332</td>
+<td style="background:#5a994e;color:white;">INDUSTRIAL ETHICS(100%)</td>
+</tr>
+<tr >
+<td style="background:#ffffff;color:black;">CSE 322</td>
+<td style="background:#5a994e;color:white;">AUTOMATA (100%)</td>
+</tr>
+<tr >
+<td style="background:#ffffff;color:black;">INT 219</td>
+<td style="background:#5a994e;color:white;">WED DEVELOPMENT (100%)</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>
